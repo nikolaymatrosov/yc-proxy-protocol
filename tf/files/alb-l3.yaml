@@ -1,0 +1,13 @@
+#cloud-config
+write_files:
+- content: |
+    server {
+        listen 8080 proxy_protocol;
+        server_name demo;
+
+        location / {
+            proxy_pass http://127.0.0.1:8000/;
+            proxy_set_header X-Forwarded-For $proxy_protocol_addr;
+        }
+    }
+  path: /etc/nginx/conf.d/01_httpbin.conf
