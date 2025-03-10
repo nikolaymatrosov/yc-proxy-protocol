@@ -1,3 +1,5 @@
+Пример кода для поста [Сохранение IP-адреса клиента с при развертывании приложения за балансировщиком нагрузки](https://nikolaymatrosov.ru/2025-03-09-Preserving-client-IP-behind-load-balancers/?utm_source=github&utm_medium=readme&utm_campaign=example)
+
 Run Packer
 
 ```bash
